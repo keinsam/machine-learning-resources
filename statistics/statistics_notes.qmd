@@ -1,0 +1,21 @@
+# Statistiques
+
+## Modèle Linéaire {#sec-lm}
+
+### Modèle Linéaire Générale {#subsec-glm}
+
+:::{#thm-1.1}
+Soit $d\leqslant n$ et $X$ de rang $d$,
+$$\hat{\theta} = (X^\top X)^{-1}X^\top Y$$
+:::
+
+### Modèle Linéaire Gaussien
+
+:::{#thm-2}
+Sous le modèle linéaire gaussien $P_{\theta, \sigma^2}$, 
+$$\hat{\theta} \sim N(\theta, \sigma^2 (X^\top X)^{-1}), $$
+$$\frac{|\hat{\varepsilon}|^2}{\sigma^2} \sim \chi_2(n-d), $$
+et ces deux variables aléatoires sont indépendantes. 
+:::
+
+## Modèles Exponentiels {#sec-mlg}

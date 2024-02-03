@@ -8,7 +8,7 @@ execute:
   eval: true
   echo: false
   collapse: false
-  
+
 engine: knitr
 ---
 
@@ -31,6 +31,23 @@ require(glue)
 ```{r}
 #| label: animated
 #| appendix: true
+
+# setwd("/Users/kein_sam/Desktop/GitHub/exploratory-data-analysis/hmw-1/")
+
+
+gdp_path <- "data/OECD_gross_domestic_product.csv"
+leb_path <- "data/OECD_life_expectancy_at_birth.csv"
+pop_path <- "data/OECD_population.csv"
+
+# Read the CSV files
+df_gdp <- read.csv(gdp_path)
+df_leb <- read.csv(leb_path)
+df_pop <- read.csv(pop_path)
+
+```
+
+```{r}
+df_gdp %>% head()
 ```
 
 ## Appendix
